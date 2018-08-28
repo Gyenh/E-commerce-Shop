@@ -10,7 +10,7 @@ Product.create(
   title: "T-shirt 1",
   description: "Un joli mug pour votre café",
   price: 12.5,
-  image_url: "1.jpg")
+  image_url: "1.gif")
 
 Product.create(
   title: "T-shirt 2",
@@ -22,10 +22,22 @@ Product.create(
     title: "T-shirt 3",
     description: "Un joli mug pour votre café",
     price: 28.99,
-    image_url: "3.jpg")
+    image_url: "3.gif")
 
   Product.create(
     title: "T-shirt 4",
     description: "Parfait pour le sport",
     price: 34,
     image_url: "4.jpg")
+
+  Product.create(
+    title: "T-shirt 5",
+    description: "Parfait",
+    price: 34,
+    image_url: "5.gif")
+
+  Product.create(
+    title: "T-shirt 6",
+    description: "Le sport",
+    price: 34,
+    image_url: "6.gif")
