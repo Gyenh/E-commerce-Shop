@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+gem 'stripe'
 gem 'rails_admin', github: 'sferik/rails_admin'
 gem 'jquery-rails'
 gem 'devise'
