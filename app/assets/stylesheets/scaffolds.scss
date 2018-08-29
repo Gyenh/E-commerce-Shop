@@ -1,15 +1,16 @@
 body {
   // background-color: #fff;
-  width: 100vw;
-  height: 100vh;
+  // width: 100vw;
+  // height: 100vh;
   background: linear-gradient(132deg, #ffffff, #fdebf3, #fffef0, #d5e9df, #ffffff);
   background-size: 400% 400%;
   animation: BackgroundGradient 30s ease infinite;  
 
   color: #333;
   font-family: 'VT323', monospace;
-  font-size: 14px;
-  line-height: 18px;
+  // font-size: 14px;
+  // line-height: 18px;
+
 }
 
 @keyframes BackgroundGradient {
@@ -101,8 +102,8 @@ body {
 }
 
 .center {
-  padding-left: 7px;
-  padding-right: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
   // padding-bottom: 0px;
   border: 1px solid black;
 }
@@ -110,12 +111,25 @@ body {
   background-color: white;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
 
 .left
-.right
+.right {
+  width: 60px;
+  height: 60px;
+}
 
 .fa:hover, .fas:hover {
-  opacity: 0.8;
+  // opacity: 0.8;
+  color: #ff00ff;
+}
+
+.fa, .fas {
+  // opacity: 0.8;
+  font-size: 15px;
 }
 
 .footer, .logo-rs{
@@ -177,14 +191,7 @@ h2 {
 
 
 
-// body {
-//   background-color: #fff;
-//   color: #333;
-//   margin: 33px;
-//   font-family: verdana, arial, helvetica, sans-serif;
-//   font-size: 13px;
-//   line-height: 18px;
-// }
+
 
 // p, ol, ul, td {
 //   font-family: verdana, arial, helvetica, sans-serif;
