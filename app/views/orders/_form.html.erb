@@ -25,8 +25,19 @@
   <%= form.label :email %>
   <%= form.text_field :email, class: "form-control"  %>
 </div>
+<%= form_tag charges_path do %>
+  <article>
+    <% if flash[:error].present? %>
+      <div id="error_explanation">
+        <p><%= flash[:error] %></p>
+      </div>
+    <% end %>
+  </article>
 
-<div class="actions">
-  <%= form.submit "Valider", class: "btn btn-primary"  %>
-</div>
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="Une image de chat, UNE !"
+          data-amount="500"
+          data-locale="auto"></script>
+<% end %>
 <% end %>

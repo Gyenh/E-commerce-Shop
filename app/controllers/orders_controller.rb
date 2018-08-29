@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 class OrdersController < ApplicationController
   include CurrentCart
-  before_action :set_cart, only: [:new, :create]
+  before_action :set_cart, only: %i[new create]
   before_action :redirect_if_cart_is_empty, only: :new
-  before_action :set_order, only: [:show, :edit, :update, :destroy]
+  before_action :set_order, only: %i[show edit update destroy]
 
   # GET /orders
   # GET /orders.json
@@ -12,8 +14,7 @@ class OrdersController < ApplicationController
 
   # GET /orders/1
   # GET /orders/1.json
-  def show
-  end
+  def show; end
 
   # GET /orders/new
   def new
@@ -21,8 +22,7 @@ class OrdersController < ApplicationController
   end
 
   # GET /orders/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /orders
   # POST /orders.json
@@ -67,6 +67,7 @@ class OrdersController < ApplicationController
   end
 
   private
+
   # Use callbacks to share common setup or constraints between actions.
   def set_order
     @order = Order.find(params[:id])
@@ -79,7 +80,7 @@ class OrdersController < ApplicationController
 
   def redirect_if_cart_is_empty
     if @cart.line_items.empty?
-      redirect_to root_url, notice: "Votre panier est vide"
+      redirect_to root_url, notice: 'Votre panier est vide'
     end
   end
 end
