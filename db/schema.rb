@@ -31,6 +31,10 @@ ActiveRecord::Schema.define(version: 2018_08_28_131357) do
   end
 
   create_table "orders", force: :cascade do |t|
+<<<<<<< HEAD
+=======
+    t.bigint "user_id"
+>>>>>>> 1633745569b5f3dffbd827cca14093ea89fd77b2
     t.integer "status", default: 0, null: false
     t.bigint "cart_id"
     t.bigint "user_id"
