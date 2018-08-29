@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>Catalogue produit</h1>
 <%= link_to "Panier !", carts_path, class:"btn btn-danger" %>
 <% if user_signed_in? %>
@@ -32,3 +33,20 @@
     <% end %>
     <% end %>
     <% end %>
+=======
+<div class="wrappi">
+  <div class="containi">
+    <div class="row">
+      <% cache @products do %>
+      <% @products.each do |product| %>
+      <% cache product do %>
+      <%= image_tag(product.image_url, width: "300", height: "300") %>
+    <% end %>
+    <% end %>
+    <% end %>
+    </div>
+  </div>
+</div>
+
+
+>>>>>>> 46a551e44aa766a110650870476dd149adf2ec5f

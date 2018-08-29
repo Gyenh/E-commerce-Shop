@@ -1,15 +1,11 @@
 body {
-  // background-color: #fff;
-  width: 100vw;
-  height: 100vh;
   background: linear-gradient(132deg, #ffffff, #fdebf3, #fffef0, #d5e9df, #ffffff);
   background-size: 400% 400%;
   animation: BackgroundGradient 30s ease infinite;  
-
   color: #333;
   font-family: 'VT323', monospace;
-  font-size: 14px;
-  line-height: 18px;
+  display: block;
+  margin: 0px;
 }
 
 @keyframes BackgroundGradient {
@@ -45,6 +41,7 @@ body {
     transform: skew(0);
   }
 }
+
 @keyframes hvr-wobble-skew {
   16.65% {
     -webkit-transform: skew(-4deg);
@@ -71,6 +68,7 @@ body {
     transform: skew(0);
   }
 }
+
 .hvr-wobble-skew {
   display: inline-block;
   vertical-align: middle;
@@ -78,6 +76,7 @@ body {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
+
 .hvr-wobble-skew:hover, .hvr-wobble-skew:focus, .hvr-wobble-skew:active {
   -webkit-animation-name: hvr-wobble-skew;
   animation-name: hvr-wobble-skew;
@@ -89,175 +88,129 @@ body {
   animation-iteration-count: 1;
 }
 // fin de l'effet hover sur le logo
-
 .wrapper {
-  // padding-top: 10px;
-  // padding-right: 50px;
-  // padding-bottom: 0px;
-  // padding-left: 50px;
-  display: flex;
-  align-items: center;
-  // justify-content: space-between;
+    width: 972px;
+    margin: 0px auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+  width: 100px;
+  height: 100px;
 }
 
 .center {
-  padding-left: 7px;
-  padding-right: 7px;
-  // padding-bottom: 0px;
   border: 1px solid black;
+  width: 86px;
+  margin-left: 16px;
+  margin-top: 8px;
+  text-align: center;
 }
+
 .center:hover {
   background-color: white;
 }
 
-
-.left
-.right
-
-.fa:hover, .fas:hover {
-  opacity: 0.8;
+button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    // color: none !important;
+    background: none !important;
+    border: none !important;
+    font-family: 'VT323', monospace;
+    font-size: 14px;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: none !important;
+    color: none
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    // background-color: white;
+    min-width: 100px;
+    // max-height: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 14px;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ff00ff;
+  color: white;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: white;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: none !important;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.fa:hover, .fas:hover {
+  // opacity: 0.8;
+  color: #ff00ff;
+}
+
+.fa, .fas {
+  // opacity: 0.8;
+  font-size: 15px;
+    padding-left: 15px;
+}
+
+h2 {
+  font-size: 15px;
+} 
+
 .footer, .logo-rs{
-  padding: 10px;
+  padding: 0px;
   display: flex;
   align-items: center;
   list-style: none;
   color: black;
-  justify-content: space-between;
+  justify-content: center;
+  margin: 0px;
+  margin-bottom: 10px;
 }
-h2 {
-  font-size: 15px;
+
+.fab:hover, .fa:hover {
+  color: #ff00ff;
 }
 
-// p, ol, ul, td {
-//   font-family: 'VT323', monospace;
-//   font-size: 14px;
-//   // line-height: 18px;
-// }
+.fab {
+  padding-left: 15px;
+}
 
-// pre {
-//   // background-color: #eee;
-//   padding: 10px;
-//   font-size: 11px;
-// }
+.wrappi {
+  height: 650px;
+  width: 950px;
+  margin: auto auto;
+}
 
-// a {
-//   color: #000;
-
-//   &:visited {
-//     color: #666;
-//   }
-
-//   &:hover {
-//     color: #fff;
-//     background-color: #000;
-//   }
-// }
-
-// th {
-//   padding-bottom: 5px;
-// }
-
-// td {
-//   padding: 0 5px 7px;
-// }
-
-// div {
-//   &.field, &.actions {
-//     margin-bottom: 10px;
-//   }
-// }
-
-//  
-
-
-
-
-
-
-
-// body {
-//   background-color: #fff;
-//   color: #333;
-//   margin: 33px;
-//   font-family: verdana, arial, helvetica, sans-serif;
-//   font-size: 13px;
-//   line-height: 18px;
-// }
-
-// p, ol, ul, td {
-//   font-family: verdana, arial, helvetica, sans-serif;
-//   font-size: 13px;
-//   line-height: 18px;
-// }
-
-// pre {
-//   background-color: #eee;
-//   padding: 10px;
-//   font-size: 11px;
-// }
-
-// a {
-//   color: #000;
-
-//   &:visited {
-//     color: #666;
-//   }
-
-//   &:hover {
-//     color: #fff;
-//     background-color: #000;
-//   }
-// }
-
-// th {
-//   padding-bottom: 5px;
-// }
-
-// td {
-//   padding: 0 5px 7px;
-// }
-
-// div {
-//   &.field, &.actions {
-//     margin-bottom: 10px;
-//   }
-// }
-
-// #notice {
-//   color: green;
-// }
-
-// .field_with_errors {
-//   padding: 2px;
-//   background-color: red;
-//   display: table;
-// }
-
-// #error_explanation {
-//   width: 450px;
-//   border: 2px solid red;
-//   padding: 7px 7px 0;
-//   margin-bottom: 20px;
-//   background-color: #f0f0f0;
-
-//   h2 {
-//     text-align: left;
-//     font-weight: bold;
-//     padding: 5px 5px 5px 15px;
-//     font-size: 12px;
-//     margin: -7px -7px 0;
-//     background-color: #c00;
-//     color: #fff;
-//   }
-
-//   ul li {
-//     font-size: 12px;
-//     list-style: square;
-//   }
-// }
-
-// label {
-//   display: block;
-// }
+.containi {
+    margin: 0px auto;
+}
