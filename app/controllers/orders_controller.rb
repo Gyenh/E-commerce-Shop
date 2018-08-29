@@ -2,6 +2,7 @@
 
 class OrdersController < ApplicationController
   include CurrentCart
+  # include CurrentUser
   before_action :set_cart, only: %i[new create]
   before_action :redirect_if_cart_is_empty, only: :new
   before_action :set_order, only: %i[show edit update destroy]
@@ -27,8 +28,9 @@ class OrdersController < ApplicationController
   # POST /orders
   # POST /orders.json
   def create
-    @order = Order.new(order_params)
+    @order = Order.new
     @order.cart = @cart
+    @order.user_id = current_user.id
 
     respond_to do |format|
       if @order.save
@@ -75,7 +77,7 @@ class OrdersController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def order_params
-    params.require(:order).permit(:name, :address, :email)
+    params.require(:user).permit(:name, :address, :email)
   end
 
   def redirect_if_cart_is_empty
