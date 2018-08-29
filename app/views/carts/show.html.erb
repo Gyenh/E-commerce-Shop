@@ -10,9 +10,13 @@
   <div class="col">
     <%= link_to "Retour aux produits", root_path, class: "btn btn-primary" %>
   </div>
+  <% if user_signed_in? %>
   <div class="col">
-    <%= button_to "Acheter", new_order_path, method: :get, class: "btn btn-primary" %>
+    <%= button_to "Acheter", new_order_path, method: :get, class: "btn btn-success" %>
   </div>
+  <% else %>
+  <%= link_to "Connecte toi ou inscrit toi pour payer !", new_user_registration_path, class:"btn btn-danger" %>
+  <% end %>
   <div class="col">
     <%= button_to "Vider le panier", @cart, method: :delete, data: {
       confirm: "Êtes-vous sûr ?" }, class: "btn btn-danger" %>
