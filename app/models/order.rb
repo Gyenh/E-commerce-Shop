@@ -4,4 +4,5 @@ class Order < ApplicationRecord
   validates :status, inclusion: statuses.keys
 
   belongs_to :cart
+  belongs_to :user, foreign_key: true
 end
