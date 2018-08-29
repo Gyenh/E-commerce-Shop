@@ -5,13 +5,22 @@
       <a href="root_path"><%= image_tag("logo.png", alt: "manike-neko", class: "logo", size: 9*9) %></a>
     </span>
   </div>
-  <div class="center">    
-    <h2>Catégorie</h2>
-  </div>
+  <div class="center">  
+
+    <div class="dropdown">
+      <button class="dropbtn">Catégorie</button>
+      <div class="dropdown-content">
+        <a href="#">Static</a>
+        <a href="#">Moving</a>
+      </div>
+    </div>
+
+<!--     <a href="#"><h2>Catégorie</h2></a>
+ -->  </div>
   <div class="right">
-    <i class="fas fa-sliders-h"></i>
-    <i class="fas fa-sign-in-alt"></i>
-    <i class="fas fa-shopping-cart"></i>
+    <a href="#"><i class="fas fa-sliders-h" title="profil"></i></a>
+    <a href="#"><i class="fas fa-sign-in-alt" title="log-in"></i></a>
+    <a href="#"><i class="fas fa-shopping-cart" title="panier"></i></a>
 
 
 <!--     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
