@@ -12,7 +12,7 @@ has_many :orders
   private
 
   def send_welcome_email
-    UserMailer.welcome(self).deliver.now
+    UserMailer.welcome(self).deliver_now
   end
 
 end
