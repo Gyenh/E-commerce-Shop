@@ -5,9 +5,8 @@ class OrderMailer < ApplicationMailer
   #
   #   en.order_mailer.payment.subject
   #
-  def payment
-    @greeting = "Hi"
-
-    mail to: "to@example.org"
-  end
+  def payment(user)
+ @user = user
+ mail(to: @user.email, subject: "Welcome to Maneki-Neko")
+ end
 end

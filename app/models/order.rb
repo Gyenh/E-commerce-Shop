@@ -5,4 +5,5 @@ class Order < ApplicationRecord
 
   belongs_to :cart
   belongs_to :user, foreign_key: true
+
 end
