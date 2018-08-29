@@ -18,18 +18,99 @@ body {
     100% {background-position: 0% 50%;}
 }
 
+// LOGO effet de ouff 
+@-webkit-keyframes hvr-wobble-skew {
+  16.65% {
+    -webkit-transform: skew(-3deg);
+    transform: skew(-3deg);
+  }
+  33.3% {
+    -webkit-transform: skew(3deg);
+    transform: skew(3deg);
+  }
+  49.95% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+  66.6% {
+    -webkit-transform: skew(2deg);
+    transform: skew(2deg);
+  }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+@keyframes hvr-wobble-skew {
+  16.65% {
+    -webkit-transform: skew(-4deg);
+    transform: skew(-4deg);
+  }
+  33.3% {
+    -webkit-transform: skew(3deg);
+    transform: skew(3deg);
+  }
+  49.95% {
+    -webkit-transform: skew(-3deg);
+    transform: skew(-3deg);
+  }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+.hvr-wobble-skew {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-wobble-skew:hover, .hvr-wobble-skew:focus, .hvr-wobble-skew:active {
+  -webkit-animation-name: hvr-wobble-skew;
+  animation-name: hvr-wobble-skew;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+// fin de l'effet hover sur le logo
+
 .wrapper {
-  padding-top: 10px;
-  padding-right: 50px;
-  padding-bottom: 0px;
-  padding-left: 50px;
+  // padding-top: 10px;
+  // padding-right: 50px;
+  // padding-bottom: 0px;
+  // padding-left: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
-.logo:hover {
-  opacity: 0.8;
+
+.center {
+  padding-left: 7px;
+  padding-right: 7px;
+  // padding-bottom: 0px;
+  border: 1px solid black;
 }
+.center:hover {
+  background-color: white;
+}
+
+
 .left
 .right
 
@@ -45,12 +126,10 @@ body {
   color: black;
   justify-content: space-between;
 }
-h1 {
+h2 {
   font-size: 15px;
 }
-h1:hover {
-  opacity: 0.8;
-}
+
 // p, ol, ul, td {
 //   font-family: 'VT323', monospace;
 //   font-size: 14px;
