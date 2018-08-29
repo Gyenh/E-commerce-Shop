@@ -11,20 +11,8 @@
 </div>
 <% end %>
 
-<div class="form-group">
-  <%= form.label :name %>
-  <%= form.text_field :name, class: "form-control" %>
-</div>
+<h3>Voici la récap</h3>
 
-<div class="form-group">
-  <%= form.label :address %>
-  <%= form.text_area :address, class: "form-control", row: 3 %>
-</div>
-
-<div class="form-group">
-  <%= form.label :email %>
-  <%= form.text_field :email, class: "form-control"  %>
-</div>
 <%= form_tag charges_path do %>
   <article>
     <% if flash[:error].present? %>
@@ -37,7 +25,7 @@
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-description="Une image de chat, UNE !"
-          data-amount="500"
+          data-amount="2000"
           data-locale="auto"></script>
 <% end %>
 <% end %>
