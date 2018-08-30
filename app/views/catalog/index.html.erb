@@ -1,22 +1,35 @@
-<h1>Catalogue produit</h1>
+<!-- <h1>Catalogue produit</h1>
 <%= link_to "Panier !", carts_path, class:"btn btn-danger" %>
 <% if user_signed_in? %>
 <%= link_to "Mon compte !", edit_user_registration_path, class:"btn btn-success" %>
 <%= link_to "Se deconnecter !", destroy_user_session_path, method: :delete, class:"btn btn-danger" %>
 <% else %>
 <%= link_to "Se connecter !", new_user_session_path, class:"btn btn-success" %>
-<% end %>
+<% end %> -->
 
-<div class="wrappi">
-  <div class="containi">
-    <div class="row">
-      <% cache @products do %>
-      <% @products.each do |product| %>
-      <% cache product do %>
-      <%= image_tag(product.image_url, width: "300", height: "300") %>
+<!--   <div class="containi">
+
+ -->
+<div class="row">
+  <div class="col-sm">
+    <% cache @products do %>
+    <% @products.each do |product| %>
+    <% cache product do %>
+
+  
+        <div class="container float-left"> 
+          <%= image_tag(product.image_url, width: "300", height: "300", class: "image") %>
+          <div class="middle">
+            <div class="text">
+              <%= button_to 'Ajouter au panier', line_items_path(product_id: product), class: 'btn btn-primary' %>
+            </div>
+          </div>
+        </div>
+
     <% end %>
     <% end %>
     <% end %>
-    </div>
-  </div>
 </div>
+</div>
+<!--   </div>
+ -->
