@@ -13,6 +13,6 @@ Rails.application.routes.draw do
 #il sert à mémoriser les produits dans le panier (du current user si log in) de la session en cours
   resources :line_items
 
-  # resources :charges
+  resources :charges
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
