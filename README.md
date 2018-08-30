@@ -3,7 +3,7 @@
 <br/>_Tu peux cliquer sur l'image ou tu peux suivre le lien suivant:_
 http://manike-neko.herokuapp.com/<br/>
 
-# Kitty-Gang
+# Kitty-Gang :smiley_cat:
 Une superbe application d'e-shop où nous vendons des magnifiques images & gifs de chat qui ne nous appartiennent pas !
 
 ## La team
@@ -23,3 +23,5 @@ Une superbe application d'e-shop où nous vendons des magnifiques images & gifs 
 
 ### Autres
 Pour toutes autres questions, nous verrons à la correction. :bowtie:
+
+###  :smiley_cat: :smiley_cat: :smiley_cat: :smiley_cat: :smiley_cat:
