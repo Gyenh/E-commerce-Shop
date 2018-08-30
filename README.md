@@ -1,24 +1,25 @@
-# README
+# Site en production
+[![N|Solid](https://cdn.iconscout.com/icon/free/png-256/heroku-5-569467.png)](http://manike-neko.herokuapp.com/)
+<br/>_Tu peux cliquer sur l'image ou tu peux suivre le lien suivant:_
+http://manike-neko.herokuapp.com/<br/>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Kitty-Gang
+Une superbe application d'e-shop où nous vendons des magnifiques images & gifs de chat qui ne nous appartiennent pas !
 
-Things you may want to cover:
+## La team
 
-* Ruby version
+**Team Back**
+- Wilrib _slack_ @Wilrib-Non-binaire
 
-* System dependencies
+**Team Front**
+- Cat _slack_ @clyde
 
-* Configuration
+**Team Both**
+- Moog _slack_ @moog
 
-* Database creation
+**Team absents, partis en :palm_tree: Thailande :palm_tree:**
+- Kwevan
+- Gino
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Autres
+Pour toutes autres questions, nous verrons à la correction. :bowtie:
