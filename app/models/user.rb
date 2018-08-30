@@ -13,6 +13,7 @@ has_many :orders
 
   def send_welcome_email
     UserMailer.welcome(self).deliver_now
+   redirect_to root_path, alert: "Thank you for the registration"
   end
 
 end
