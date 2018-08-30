@@ -13,7 +13,6 @@
 
 <h3>VOICI LE RECAPITULATIF DE TA COMMANDE</h3>
 
-<%= @cart.total %>
 <%= form_tag charges_path do %>
   <article>
     <% if flash[:error].present? %>
@@ -21,6 +20,9 @@
         <p><%= flash[:error] %></p>
       </div>
     <% end %>
+    <label class="amount">
+      <span>Amount: <%= @cart.total %> €</span>
+    </label>
   </article>
 
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
