@@ -6,21 +6,20 @@ class ChargesController < ApplicationController
 
   def new
     @user = current_user
-    @cart = current_cart
-    @amount = @cart.total
   end
 
   def create
     # Amount in cents
     @amount = @cart.total
+    puts @amount
 
     customer = Stripe::Customer.create(
-      email: @user.email,
+      email: params[:email],
       source: params[:stripeToken]
     )
 
     charge = Stripe::Charge.create(
-      customer: @user.id,
+      customer: customer.id,
       amount: @amount,
       description: 'Une image de chat, UNE !',
       currency: 'eur'
@@ -29,4 +28,13 @@ class ChargesController < ApplicationController
     flash[:error] = e.message
     redirect_to root_path
   end
+
+  def initialize
+    @cart = Cart.new
+  end
+
+  def method_calls_method
+    @cart.total
+  end
+
 end
