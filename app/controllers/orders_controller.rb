@@ -36,7 +36,7 @@ class OrdersController < ApplicationController
     respond_to do |format|
       if @order.save
         session.delete(:cart_id)
-        format.html { redirect_to new_charge_path, notice: 'Commande validée.' }
+        format.html { redirect_to root_path, notice: 'Commande validée.' }
         format.json { render :show, status: :created, location: @order }
       else
         format.html { render :new }
