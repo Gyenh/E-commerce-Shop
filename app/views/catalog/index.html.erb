@@ -10,17 +10,18 @@
   <%= current_user.email %>
   <% end %>
 
-
-  <div class="wrappi">
-    <div class="containi">
-      <div class="row">
-        <% cache @products do %>
+<div class="wrappi">
+  <div class="containi">
+    <div class="row">
+      <% cache @products do %>
         <% @products.each do |product| %>
-        <% cache product do %>
-        <%= image_tag(product.image_url, width: "300", height: "300") %>
+          <% cache product do %>
+            <%= image_tag(product.image_url, width: "300", height: "300") %>
+            <%= number_to_currency product.price, unit: '€', separator: ',', format: '%n %u' %>
+            <%= button_to 'Ajouter au panier', line_items_path(product_id: product), class: 'btn btn-primary' %>
+          <% end %>
+          <% end %>
         <% end %>
-        <% end %>
-        <% end %>
-      </div>
     </div>
   </div>
+</div>

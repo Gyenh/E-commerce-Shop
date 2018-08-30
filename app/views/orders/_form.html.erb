@@ -27,7 +27,7 @@
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-description="Une image de chat, UNE !"
-          data-amount="2000"
+          data-amount="<%= @cart.total * 100 %>"
           data-locale="auto"></script>
 <% end %>
 <% end %>
