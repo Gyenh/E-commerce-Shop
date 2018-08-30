@@ -7,37 +7,130 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Product.create(
-  title: "T-shirt 1",
-  description: "Un joli mug pour votre café",
-  price: 12.5,
+  title: "Blue Cat",
+  description: "L'homme chat qui se glisse dans votre rue.",
+  price: 0.99,
   image_url: "1.gif")
 
 Product.create(
-  title: "T-shirt 2",
-  description: "Parfait pour le sport",
-  price: 25,
+  title: "Cat Pins",
+  description: "Le porte-bonheur parfait pour votre veste.",
+  price: 0.99,
   image_url: "2.jpg")
 
   Product.create(
-    title: "T-shirt 3",
-    description: "Un joli mug pour votre café",
-    price: 28.99,
+    title: "Maneki",
+    description: "Ce chat vous évitera tous les ennuis.",
+    price: 0.99,
     image_url: "3.gif")
 
   Product.create(
-    title: "T-shirt 4",
-    description: "Parfait pour le sport",
-    price: 34,
+    title: "Kitty Hey",
+    description: "Pour se poser nu sur votre peau de bête.",
+    price: 0.99,
     image_url: "4.jpg")
 
   Product.create(
-    title: "T-shirt 5",
-    description: "Parfait",
-    price: 34,
+    title: "Manike",
+    description: "La réponse automatique à votre patron.",
+    price: 0.99,
     image_url: "5.gif")
 
   Product.create(
-    title: "T-shirt 6",
-    description: "Le sport",
-    price: 34,
+    title: "Croqueur de Building",
+    description: "Le plus terrifiant des chats sur terre.",
+    price: 0.99,
     image_url: "6.gif")
+
+
+
+
+
+
+
+
+
+# LES 20 AUTRES SEED À METTRE EN BDD 
+
+# Product.create(
+#   title: "Cat 7",
+#   description: "Un joli mug pour votre café",
+#   price: 0.99,
+#   image_url: "1.gif")
+
+# Product.create(
+#   title: "Cat 8",
+#   description: "Parfait pour le sport",
+#   price: 0.99,
+#   image_url: "2.jpg")
+
+#   Product.create(
+#     title: "9",
+#     description: "Un joli mug pour votre café",
+#     price: 0.99,
+#     image_url: "3.gif")
+
+#   Product.create(
+#     title: "10",
+#     description: "Parfait pour le sport",
+#     price: 0.99,
+#     image_url: "4.jpg")
+
+#   Product.create(
+#     title: "11",
+#     description: "Parfait",
+#     price: 0.99,
+#     image_url: "5.gif")
+
+#   Product.create(
+#     title: "12",
+#     description: "Le sport",
+#     price: 0.99,
+#     image_url: "6.gif")
+# Product.create(
+#   title: "13",
+#   description: "Un joli mug pour votre café",
+#   price: 0.99,
+#   image_url: "1.gif")
+
+# Product.create(
+#   title: "14",
+#   description: "Parfait pour le sport",
+#   price: 0.99,
+#   image_url: "2.jpg")
+
+#   Product.create(
+#     title: "15",
+#     description: "Un joli mug pour votre café",
+#     price: 0.99,
+#     image_url: "3.gif")
+
+#   Product.create(
+#     title: "16",
+#     description: "Parfait pour le sport",
+#     price: 0.99,
+#     image_url: "4.jpg")
+
+#   Product.create(
+#     title: "17",
+#     description: "Parfait",
+#     price: 0.99,
+#     image_url: "5.gif")
+
+#   Product.create(
+#     title: "18",
+#     description: "Le sport",
+#     price: 0.99,
+#     image_url: "6.gif")
+
+#   Product.create(
+#     title: "19",
+#     description: "Parfait",
+#     price: 0.99,
+#     image_url: "5.gif")
+
+#   Product.create(
+#     title: "20",
+#     description: "Le sport",
+#     price: 0.99,
+#     image_url: "6.gif")
