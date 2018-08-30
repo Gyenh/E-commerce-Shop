@@ -145,14 +145,15 @@ button {
     font-size: 14px;
 }
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content div {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    cursor: pointer;
 }
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
+.dropdown-content div:hover {
   background-color: #ff00ff;
   color: white;
 }
@@ -187,10 +188,9 @@ h2 {
   font-size: 15px;
 } 
 
-
-
-
-
+.hidden_product {
+  display: none;
+}
 
 
 .container {
@@ -218,11 +218,12 @@ h2 {
     text-align: center;
 }
 
-.container:hover .image {
-  opacity: 0.3;
+.item_product_cat:hover .image {
+      cursor: pointer;
+      opacity: 0.3;
 }
 
-.container:hover .middle {
+.item_product_cat:hover .middle {
   opacity: 1;
 }
 
@@ -298,4 +299,69 @@ h2 {
 
 .containi {
     margin: 0px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper_product {
+  position: fixed;
+  padding-top: 20vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(256, 256, 256, 0.4);
+  z-index: 1000;
+   &_block {
+    width: 50%;
+    margin: auto auto;
+    background-color: white;
+    border: 1px solid black;
+    &_img {}
+    &_desc {
+      &_title { 
+        font-size: 20px;
+      }
+      &_desc {}
+      &_price {}
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 668px) {
+  .wrapper {
+    width: 100%;
+  }
 }

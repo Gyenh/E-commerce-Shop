@@ -11,25 +11,64 @@
 
  -->
 <div class="row">
-  <div class="col-sm">
+  <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-md-12">
+    <div class="row">
     <% cache @products do %>
     <% @products.each do |product| %>
     <% cache product do %>
 
-
-        <div class="container float-left">
-          <%= image_tag(product.image_url, width: "300", height: "300", class: "image") %>
+<div class="col-xs-12 col-sm-6 col-md-4">
+        <div id="<%= product.id %>" class="item_product_cat">
+          <%= image_tag(product.image_url, width: "300", height: "300", id: "product_#{product.id}", class: "image") %>
           <div class="middle">
-            <div class="text">
+            <!-- <div class="text">
+              <%= product.title %>
+              <%= product.description %>
+              <%= product.price %>              
               <%= button_to 'Ajouter au panier', line_items_path(product_id: product), class: 'btn btn-primary' %>
-            </div>
+            </div> -->
           </div>
         </div>
+      </div>
 
     <% end %>
     <% end %>
     <% end %>
+</div>
 </div>
 </div>
 <!--   </div>
  -->
+
+<% cache @products do %>
+  <% @products.each do |product| %>
+    <% cache product do %>  
+      <div id="wrapper_product_<%= product.id %>" class="wrapper_product hidden_product">
+       <div class="wrapper_product_block">
+         <div class="wrapper_product_img">
+           <%= image_tag(product.image_url, width: "300", height: "300", id: "product_#{product.id}", class: "image") %>
+         </div>
+         <div class="wrapper_product_desc">
+           <div class="wrapper_product_desc_title">
+             <%= product.title %>
+           </div>
+           <div class="wrapper_product_desc_desc">
+             <%= product.description %>
+           </div>
+           <div class="wrapper_product_desc_buy">
+             <div class="wrapper_product_desc_buy_price">
+               <%= product.price %>              
+             </div>
+             <div class="wrapper_product_desc_buy_button">
+               <%= button_to 'Ajouter au panier', line_items_path(product_id: product), class: 'btn btn-primary' %>
+             </div>
+           </div>
+         </div> 
+         <div class="cross_to_close">
+           <i class="fas fa-times"></i>
+         </div>
+       </div>
+      </div>
+    <% end %>
+  <% end %>
+<% end %>     
