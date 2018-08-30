@@ -66,6 +66,13 @@ class CartsController < ApplicationController
     end
   end
 
+  def remove_item
+    @cart.delete_at(params[:index].to_i)
+
+    redirect_to cart_path
+  end
+
+
   private
 
   def cart_not_found
