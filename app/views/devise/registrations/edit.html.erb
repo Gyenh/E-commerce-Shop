@@ -1,88 +1,5 @@
   <h2>Hello <%= resource_name.to_s.humanize %></h2>
 
-<<<<<<< HEAD
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-<%= devise_error_messages! %>
-
-<div class="field">
-  <%= f.label :email %><br />
-  <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-</div>
-
-<% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-<div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-<% end %>
-
-<div class="field">
-  <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-  <%= f.password_field :password, autocomplete: "new-password" %>
-  <% if @minimum_password_length %>
-  <br />
-  <em><%= @minimum_password_length %> characters minimum</em>
-  <% end %>
-</div>
-
-<div class="field">
-  <%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-</div>
-
-<div class="field">
-  <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-  <%= f.password_field :current_password, autocomplete: "current-password" %>
-</div>
-
-<div class="actions">
-  <%= f.submit "Update" %>
-</div>
-<% end %>
-
-<div class="">
-  <h3>Mes commandes</h3>
-
-  <h3>Bonjour <%= current_user.email %></h3>
-  <p>Voici ton historique</p>
-  
-  <h3>Numéro de commande</h3>
-  <% current_user.orders.each do |order| %>
-  <%= order.id %>
-  <% end %>
-
-  <h3>Status</h3>
-  <% current_user.orders.each do |order| %>
-  <%= order.status %>
-  <% end %>
-  </div>
-
-  <h3>Produit</h3>
-  <% current_user.orders.each do |order| %>
-  <% order.cart.line_items.each do |item| %>
-  <%= item.product.title %>
-  <% end %>
-  <% end %>
-
-
-  <h3>Quantité</h3>
-  <% current_user.orders.each do |order| %>
-  <% order.cart.line_items.each do |item| %>
-  <%= item.quantity %>
-  <% end %>
-  <% end %>
-
-
-  <h3>Prix</h3>
-  <% current_user.orders.each do |order| %>
-  <%= order.amount %>
-  <% end %>
-  </div>
-
-
-
-  <h3>Cancel my account</h3>
-
-  <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-
-=======
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
     <%= devise_error_messages! %>
 
@@ -123,5 +40,4 @@
 
   <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
 
->>>>>>> d035e3df949113f7e81588f9c805ed2f5252777f
   <%= link_to "Back", :back %>
