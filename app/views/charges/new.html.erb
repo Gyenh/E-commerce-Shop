@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 <%= @cart.total %>
 
+=======
+>>>>>>> d035e3df949113f7e81588f9c805ed2f5252777f
 <%= form_tag charges_path do %>
   <article>
     <% if flash[:error].present? %>
@@ -7,14 +10,21 @@
         <p><%= flash[:error] %></p>
       </div>
     <% end %>
+<<<<<<< HEAD
     <label class="amount">
       <span>Amount: <%= @order.total * 100 %></span>
     </label>
+=======
+>>>>>>> d035e3df949113f7e81588f9c805ed2f5252777f
   </article>
 
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-description="Une image de chat, UNE !"
           data-amount="<%= @cart.total * 100 %>"
+<<<<<<< HEAD
+=======
+          data-currency="eur"
+>>>>>>> d035e3df949113f7e81588f9c805ed2f5252777f
           data-locale="auto"></script>
 <% end %>
