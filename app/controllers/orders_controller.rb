@@ -31,6 +31,7 @@ class OrdersController < ApplicationController
     @order = Order.new
     @order.cart = @cart
     @order.user_id = current_user.id
+    @order.amount = @cart.total
 
     respond_to do |format|
       if @order.save
