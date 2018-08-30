@@ -24,17 +24,10 @@ RailsAdmin.config do |config|
   # config.show_gravatar = true
 
 
-<<<<<<< HEAD
   # METHODE QUI PERMET DE VERIFIER SI UN UTILISATEUR EST ADMIN OU PAS POUR LE DASHBOARD
   config.authorize_with do
     redirect_to main_app.root_path unless (!current_user.nil? && current_user.admin == true)
   end
-=======
-# METHODE QUI PERMET DE VERIFIER SI UN UTILISATEUR EST ADMIN OU PAS POUR LE DASHBOARD
-config.authorize_with do
-   redirect_to main_app.root_path unless (!current_user.nil? && current_user.admin == true)
- end
->>>>>>> c75ebc8a270cc1689337f681ed2c822541eb6ebd
 
 
   config.actions do
