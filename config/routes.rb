@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :orders, only: [:index, :new, :create, :show]
 #c'est le panier, il est lié à user devise et à product et à line items et sert à créer un panier
   resources :carts, only: [:new, :create, :show, :edit, :update, :destroy]
-  #def index supprimé pour l'instant
+#def index supprimé pour l'instant
 #il sert à mémoriser les produits dans le panier (du current user si log in) de la session en cours
   resources :line_items
 
