@@ -12,7 +12,7 @@
   </div>
   <% if user_signed_in? %>
   <div class="col">
-    <%= button_to "Acheter", new_order_path, method: :get, class: "btn btn-success" %>
+    <%= button_to "Acheter", new_order_path, method: :get, class: "btn btn-primary" %>
   </div>
   <% else %>
   <%= link_to "Connecte toi ou inscrit toi pour payer !", new_user_registration_path, class:"btn btn-danger" %>

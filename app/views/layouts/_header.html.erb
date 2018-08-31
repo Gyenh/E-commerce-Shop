@@ -15,7 +15,7 @@
     <a href="#"><i class="fas fa-sign-in-alt" title="log-in"></i></a>
     <a href="carts#show"><i class="fas fa-shopping-cart" title="panier"></i></a> -->
 
-    <%= link_to " ", carts_path, class:"fas fa-shopping-cart", title:"Panier" %>
+    <%= link_to " ", new_cart_path, class:"fas fa-shopping-cart", title:"Panier" %>
     <% if user_signed_in? %>
     <%= link_to " ", edit_user_registration_path, class:"fas fa-sliders-h", title:"profil" %>
     <%= link_to "Se deconnecter !", destroy_user_session_path, method: :delete, class:"btn btn-danger" %>

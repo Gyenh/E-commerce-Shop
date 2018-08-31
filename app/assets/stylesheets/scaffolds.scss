@@ -185,8 +185,11 @@ a {
 }
 
 h2 {
-  font-size: 15px;
+  font-size: 32px;
 } 
+h3 {
+  font-size: 18px;
+}
 
 .hidden_product {
   display: none;
@@ -253,18 +256,34 @@ h2 {
 // .boutonajoutpanier {
 //   display: none;
 // }
+// .btn, .btn-primary {
+//     background-color: none !important;
+//     color: none
+//     border-radius: none;
+// }
+
+// .btn-primary:hover {
+//   display: block;
+//   background-color: white;
+// }
+// /* Change the background color of the dropdown button when the dropdown content is shown */
+// .btn-primary:hover {
+//   background-color: none !important;
+// }
+
+
+.actions {
+      padding-top: 10px;
+      cursor: pointer;
+}
 
 
 
 
 
-
-
-
-
-
-
-
+.la-mort {
+  display: flex
+}
 
 
 
@@ -361,7 +380,9 @@ h2 {
     font-size: 43px;
 }
 
-
+.button_to {
+  padding-top: 19px;
+}
 
 
 
